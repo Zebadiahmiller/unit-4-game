@@ -1,5 +1,5 @@
 
-let randomNumer = 1 + Math.floor(Math.random() * 100);
+let randomNumer = 50 + Math.floor(Math.random() * 500);
 console.log(randomNumer);
 
 let crystalOne = 5 + Math.floor(Math.random() * 20);
@@ -26,22 +26,26 @@ function startgame() {
 
     $("#crystalone").on("click", function () {
         counter + crystalOne;
-        $(".score").text(counter + crystalOne);
-        
+        $(".score").text(counter += crystalOne);
+        $("#firstcrystal").text(crystalOne);
+       
     });
     $("#crystaltwo").on("click", function () {
         counter + crystalTwo;
-        $(".score").text(counter + crystalTwo);
+        $(".score").text(counter += crystalTwo);
+        $("#secondcrystal").text(crystalTwo);
     });
     $("#crystalthree").on("click", function () {
         counter + crystalThree;
-        $(".score").text(counter + crystalThree);
+        $(".score").text(counter += crystalThree);
+        $("#thirdcrystal").text(crystalThree);
     });
     $("#crystalfour").on("click", function () {
         counter + crystalFour;
-        $(".score").text(counter + crystalFour);
+        $(".score").text(counter += crystalFour);
+        $("#fourthcrystal").text(crystalFour);
     });
-    
+
 
 
 
