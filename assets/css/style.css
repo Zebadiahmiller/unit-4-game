@@ -1,4 +1,106 @@
+html{
+    /* background-image: url(https://i.ytimg.com/vi/aiU22lKiZbA/maxresdefault.jpg); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+header{
+    background-image: url(http://etftb.tntsj.com/images/12826-2.jpg);
+    background-size: 100%;
+    font-size:50px;
+    line-height: 100px;
+    text-align:center;
+    width:50%;
+    margin-left:25%;
+    padding-bottom: 30px;
+    color:rgb(0, 255, 13);
+    border-radius: 15px;
+}
+
 img{
     Height:200px;
     Width:200px;
+    
+    
 }
+
+.instructions{
+    background-image: url(https://ak0.picdn.net/shutterstock/videos/7034680/thumb/1.jpg);
+    background-size: 100%;
+    font-size:20px;
+    line-height:40px;
+    color:hotpink;
+    width: 75%;
+    height:300px;
+    margin-left:13%;
+    border-radius: 15px;
+    text-indent:3px;
+}
+
+.randomnumber{
+    text-align:center;
+    font-size:100px;
+    line-height:125px;
+    color:hotpink;
+}
+.crystals{
+    margin-left:22%;
+    font-size:50px;
+    color:black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.scoresection{
+    text-align:center;
+    font-size:20px;
+    line-height: 30px;
+    color:hotpink;
+    clear:both;
+
+}
+#firstimage{
+    float:left;
+    position: relative;
+
+}
+#secondimage{
+    float:left;
+    position: relative;
+   
+
+}
+#thirdimage{
+    float:left;
+    position: relative;
+
+}
+#fourthimage{
+    float:left;
+    position: relative;
+    
+}
+#firstcrystal{
+    position: absolute;
+    top:80px;
+    right:90px;
+}
+#secondcrystal{
+    position: absolute;
+    top:80px;
+    right:90px;
+}
+#thirdcrystal{
+    position: absolute;
+    top:80px;
+    right:90px;
+}
+#fourthcrystal{
+    position: absolute;
+    top:80px;
+    right:90px;
+}
+
+  
+

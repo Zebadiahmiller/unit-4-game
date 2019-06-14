@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,77 @@
     <title>Crystals</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 </head>
+
 <body>
     <header>Crystal Collector!</header>
-    <div>
-        <p>You will be given a number at the start of the game.</p>
-        <p>There are four crystals below. By Clicking on a crystal you will add
+    <div class="instructions">
+        <p> You will be given a number at the start of the game.</p>
+        <p> There are four crystals below. By Clicking on a crystal you will add
             a specific amount of points to your total score.
         </p>
-        <p>You win the game by matching your total score to the random number, if your score goes above the random number you lose.</p>
-        <p>The value of each crystal is hidden from you until you click on it</p>
-        <p>Each time the game starts, the game will change the values of each crystal</p>
+        <p> You win the game by matching your total score to the random number, if your score goes above the random
+            number you lose.</p>
+        <p> The value of each crystal is hidden from you until you click on it</p>
+        <p> Each time the game starts, the game will change the values of each crystal</p>
     </div>
     <div>
-        <div class ="randomnumber"></div>
-        <div class ="wins"></div>
-        <div class ="losses"></div>
+        <div class="randomnumber"></div>
+        <div class="wins"></div>
+        <div class="losses"></div>
+        <div class="scoresection">
+            <div>
+                <div>Your Total Score is:</div>
+            </div>
+            <div>
+                <div class="score"></div>
+            </div>
+            <div>
+                <div id="wins">Wins:</div>
+                <div id="losses">Losses:</div>
+            </div>
+        </div>
     </div>
-    <div>
-        <img  id ="crystalone" src="https://i.imgur.com/1sBmkp3.jpg" alt="Green Power">
-        <img id ="crystaltwo" src="https://i.imgur.com/gp12SFr.jpg" alt="Blue Power">
-        <img id ="crystalthree" src="https://i.imgur.com/urEFa7M.jpg" alt="Chain Chomp Power">
-        <img id ="crystalfour" src="https://i.imgur.com/9TjZd5R.jpg" alt="Crystal Pepsi Power">
-        
-    </div>
-    <div class = "undercrystal">
-        <p id ="firstcrystal"></p>
-        <p id ="secondcrystal"></p>
-        <p id ="thirdcrystal"></p>
-        <p id ="fourthcrystal"></p>
-    </div>
+    <div class="crystals">
+        <div id ="firstimage">
+            <img id="crystalone" src="https://i.imgur.com/1sBmkp3.jpg" alt="Green Power">
+            <span id="firstcrystal"></span>
+        </div>
+        <div id ="secondimage">
+            <img id="crystaltwo" src="https://i.imgur.com/gp12SFr.jpg" alt="Blue Power">
+            <span id="secondcrystal"></span>
+        </div>
+        <div id ="thirdimage">
+            <img id="crystalthree" src="https://i.imgur.com/urEFa7M.jpg" alt="Chain Chomp Power">
+            <span id="thirdcrystal"></span>
+        </div>
+        <div id ="fourthimage">
+            <img id="crystalfour" src="https://i.imgur.com/9TjZd5R.jpg" alt="Crystal Pepsi Power">
+            <span id="fourthcrystal"></span>
+        </div>
 
-    <div>
-        <div>Your Total Score is:</div>
     </div>
-    <div>
-        <div class ="score"></div>
+    <div class="undercrystal">
+        <p id="firstcrystal"></p>
+        <p id="secondcrystal"></p>
+        <p id="thirdcrystal"></p>
+        <p id="fourthcrystal"></p>
     </div>
-    
-    
+    <!-- <div class="scoresection">
+        <div>
+            <div>Your Total Score is:</div>
+        </div>
+        <div>
+            <div class="score"></div>
+        </div>
+        <div>
+            <div id="wins"></div>
+            <div id="losses">Losses:</div>
+        </div>
+    </div> -->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="/assets/javascript/game.js"></script>
 </body>
+
 </html>
