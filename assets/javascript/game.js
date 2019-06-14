@@ -2,25 +2,25 @@
 
 
 
-    let randomNumer = 19 + Math.floor(Math.random() * 120);
+     randomNumer = 19 + Math.floor(Math.random() * 120);
     console.log(randomNumer);
 
-    let crystalOne = 1 + Math.floor(Math.random() * 12);
+    crystalOne = 1 + Math.floor(Math.random() * 12);
     console.log(crystalOne);
 
-    let crystalTwo = 1 + Math.floor(Math.random() * 12);
+    crystalTwo = 1 + Math.floor(Math.random() * 12);
     console.log(crystalTwo);
 
-    let crystalThree = 1 + Math.floor(Math.random() * 12);
+    crystalThree = 1 + Math.floor(Math.random() * 12);
     console.log(crystalThree);
 
-    let crystalFour = 1 + Math.floor(Math.random() * 12);
+    crystalFour = 1 + Math.floor(Math.random() * 12);
     console.log(crystalFour);
 
     counter = 0;
     
     
-    
+    console.log("Checking random #", randomNumer)
     $(".score").text(counter);
     $(".randomnumber").text(randomNumer);
     
@@ -82,10 +82,11 @@ console.log(crystalFour);
 
     function checker() {
 
-
+        console.log("Checking inside checker", randomNumer);
         if (counter > randomNumer) {
             losses++;
             $("#losses").text("Losses:" + losses);
+            
             startgame();
             // counter= 0;
         }
